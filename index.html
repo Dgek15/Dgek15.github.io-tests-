@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Сайт за три дня</title>
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -17,14 +18,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <img src="img/main-img.png" alt="Монитор" class="header-img">
+                    <img src="img/main-img.png" alt="Монитор" class="header-img wow fadeInLeftBig" data-wow-delay="0.1s">
                 </div>
                 <div class="col-lg-5">
-                    <p class="header-pretitle">Веб-разработчик</p>
-                    <h1 class="header-title">Канунников Сергей</h1>
-                    <p class="header-subtitle">Верстка на HTML/CSS
+                    <p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+                    <h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Канунников Сергей</h1>
+                    <p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS
                         <br> Серверное программирование</p>
-                    <div class="header-button-block">
+                    <div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
                         <a href="https://vk.me/dgek_15" class="header-button">Связаться</a>
                         <small>*Это бесплатно</small>
                     </div>
@@ -34,7 +35,7 @@
     </header>
     <section class="portfolio">
         <div class="container">
-            <div class="portfolio-block">
+            <div class="portfolio-block  wow fadeIn">
                 <h2 class="portfolio-title">Портфолио</h2>
                 <p class="portfolio-subtitle">Мои работы</p>
                 <div class="row">
@@ -72,16 +73,16 @@
                 <div class="col-md-4">
                     <div class="social-block">
                         <p>Подпишитесь:</p>
-                        <a href="https://www.facebook.com/">
-                            <img src="img/socials/facebook-logo-button.png" alt="Facebook">
+                        <a class=" wow bounceInDown" href="https://www.facebook.com/" data-wow-delay="0.1s">
+                            <img  src="img/socials/facebook-logo-button.png" alt="Facebook"  >
                         </a>
-                        <a href="https://vk.com/dgek_15">
-                            <img src="img/socials/vk-social-logotype.png" alt="VK">
+                        <a class=" wow bounceInDown" href="https://vk.com/dgek_15" data-wow-delay="0.2s">
+                            <img src="img/socials/vk-social-logotype.png" alt="VK" >
                         </a>
-                        <a href="https://web.telegram.org/dgek15">
+                        <a class=" wow bounceInDown" href="https://web.telegram.org/dgek15" data-wow-delay="0.3s" >
                             <img src="img/socials/telegram.png" alt="Telegramm">
                         </a>
-                        <a href="youtube.com">
+                        <a class=" wow bounceInDown" href="youtube.com" data-wow-delay="0.4s" >
                             <img src="img/socials/youtube-symbol.png" alt="YouTube">
                         </a>
                     </div>
@@ -89,12 +90,17 @@
                 <div class="col-md-4">
                     <div class="footer-cta-block">
                         <p class="footer-cta">Напишите мне</p>
+                        
                         <button class="footer-button">Написать</button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>
