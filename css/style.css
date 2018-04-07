@@ -41,6 +41,8 @@ header {
     padding: 17px 55px;
     margin-top: 33px;
     outline: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 header small {
@@ -161,6 +163,7 @@ footer {
     font-size: 18px;
     border-radius: 50px;
     padding: 12px 40px;
+    text-decoration: none;
 }
 
 @media(max-width:1200px) {
